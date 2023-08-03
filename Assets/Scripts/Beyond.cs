@@ -11,15 +11,16 @@ public class Beyond : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (stop == 1f)
+		switch (stop)
 		{
-			beyond.SetActive(value: true);
-			Invoke("SceneChanger", 4f);
-		}
-		else if (stop == 2f)
-		{
-			back.SetActive(value: true);
-			Invoke("SceneChanger", 4f);
+			case 1f:
+				beyond.SetActive(value: true);
+				Invoke(nameof(Beyond.SceneChanger), 4f);
+				break;
+			case 2f:
+				back.SetActive(value: true);
+				Invoke(nameof(Beyond.SceneChanger), 4f);
+				break;
 		}
 	}
 

@@ -4,11 +4,11 @@ public class StartMenu : MonoBehaviour
 {
 	public GameObject start;
 
-	public GameObject AboutMenu;
+	public GameObject aboutMenu;
 
-	public GameObject TutorialMenu;
+	public GameObject tutorialMenu;
 
-	public GameObject YearsMenu;
+	public GameObject yearsMenu;
 
 	private void Start()
 	{
@@ -20,7 +20,7 @@ public class StartMenu : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.E))
 		{
 			Time.timeScale = 1f;
-			YearsMenu.SetActive(value: true);
+			yearsMenu.SetActive(value: true);
 			start.SetActive(value: false);
 		}
 		if (Input.GetKeyDown(KeyCode.Escape))
@@ -32,24 +32,24 @@ public class StartMenu : MonoBehaviour
 	public void About()
 	{
 		start.SetActive(value: false);
-		AboutMenu.SetActive(value: true);
+		aboutMenu.SetActive(value: true);
 	}
 
 	public void Tutorial()
 	{
 		start.SetActive(value: false);
-		TutorialMenu.SetActive(value: true);
+		tutorialMenu.SetActive(value: true);
 	}
 
 	public void BackAbout()
 	{
 		start.SetActive(value: true);
-		AboutMenu.SetActive(value: false);
+		aboutMenu.SetActive(value: false);
 	}
 
 	public void BackTutorial()
 	{
 		start.SetActive(value: true);
-		TutorialMenu.SetActive(value: false);
+		tutorialMenu.SetActive(value: false);
 	}
 }

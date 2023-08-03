@@ -11,7 +11,7 @@ public class Years : MonoBehaviour
 
 	public GameObject[] years;
 
-	public float stop = 1;
+	public int stop = 1;
 
 	private void Update()
 	{
@@ -19,277 +19,53 @@ public class Years : MonoBehaviour
 		{
 			Application.Quit();
 		}
-		if (stop > 2f)
-		{
-			back.SetActive(value: true);
-		}
-		else
-		{
-			back.SetActive(value: false);
-		}
+		back.SetActive(value: stop > 2);
 		if (Input.GetKeyDown(KeyCode.E) && stop < 32f)
 		{
-			stop += 1f;
+			stop += 1;
 		}
 		if (Input.GetKeyDown(KeyCode.Q) && stop >= 2f)
 		{
-			stop -= 1f;
+			stop -= 1;
 		}
-		if (stop == 1)
-		{
-			years[0].SetActive(value: true);
-		}
-		else
-		{
-			years[0].SetActive(value: false);
-		}
-		if (stop == 2f)
-		{
-			years[1].SetActive(value: true);
-		}
-		else
-		{
-			years[1].SetActive(value: false);
-		}
-		if (stop == 3f)
-		{
-			years[2].SetActive(value: true);
-		}
-		else
-		{
-			years[2].SetActive(value: false);
-		}
-		if (stop == 4f)
-		{
-			years[3].SetActive(value: true);
-		}
-		else
-		{
-			years[3].SetActive(value: false);
-		}
-		if (stop == 5f)
-		{
-			years[4].SetActive(value: true);
-		}
-		else
-		{
-			years[4].SetActive(value: false);
-		}
-		if (stop == 6f)
-		{
-			years[5].SetActive(value: true);
-		}
-		else
-		{
-			years[5].SetActive(value: false);
-		}
-		if (stop == 7)
-		{
-			years[6].SetActive(value: true);
-		}
-		else
-		{
-			years[6].SetActive(value: false);
-		}
-		if (stop == 8f)
-		{
-			years[7].SetActive(value: true);
-		}
-		else
-		{
-			years[7].SetActive(value: false);
-		}
-		if (stop == 9f)
-		{
-			years[8].SetActive(value: true);
-		}
-		else
-		{
-			years[8].SetActive(value: false);
-		}
-		if (stop == 10f)
-		{
-			years[9].SetActive(value: true);
-		}
-		else
-		{
-			years[9].SetActive(value: false);
-		}
-		if (stop == 11f)
-		{
-			years[10].SetActive(value: true);
-		}
-		else
-		{
-			years[10].SetActive(value: false);
-		}
-		if (stop == 12f)
-		{
-			years[11].SetActive(value: true);
-		}
-		else
-		{
-			years[11].SetActive(value: false);
-		}
-		if (stop == 13f)
-		{
-			years[12].SetActive(value: true);
-		}
-		else
-		{
-			years[12].SetActive(value: false);
-		}
-		if (stop == 14f)
-		{
-			years[13].SetActive(value: true);
-		}
-		else
-		{
-			years[13].SetActive(value: false);
-		}
-		if (stop == 15f)
-		{
-			years[14].SetActive(value: true);
-		}
-		else
-		{
-			years[14].SetActive(value: false);
-		}
-		if (stop == 16f)
-		{
-			years[15].SetActive(value: true);
-		}
-		else
-		{
-			years[15].SetActive(value: false);
-		}
-		if (stop == 17f)
-		{
-			years[16].SetActive(value: true);
-		}
-		else
-		{
-			years[16].SetActive(value: false);
-		}
-		if (stop == 18f)
-		{
-			years[17].SetActive(value: true);
-		}
-		else
-		{
-			years[17].SetActive(value: false);
-		}
-		if (stop == 19f)
-		{
-			years[18].SetActive(value: true);
-		}
-		else
-		{
-			years[18].SetActive(value: false);
-		}
-		if (stop == 20f)
-		{
-			years[19].SetActive(value: true);
-		}
-		else
-		{
-			years[19].SetActive(value: false);
-		}
-		if (stop == 21f)
-		{
-			years[20].SetActive(value: true);
-		}
-		else
-		{
-			years[20].SetActive(value: false);
-		}
-		if (stop == 22f)
-		{
-			years[21].SetActive(value: true);
-		}
-		else
-		{
-			years[21].SetActive(value: false);
-		}
-		if (stop == 23f)
-		{
-			years[22].SetActive(value: true);
-		}
-		else
-		{
-			years[22].SetActive(value: false);
-		}
-		if (stop == 24f)
-		{
-			years[23].SetActive(value: true);
-		}
-		else
-		{
-			years[23].SetActive(value: false);
-		}
-		if (stop == 25f)
-		{
-			years[24].SetActive(value: true);
-		}
-		else
-		{
-			years[24].SetActive(value: false);
-		}
-		if (stop == 26f)
-		{
-			years[25].SetActive(value: true);
-		}
-		else
-		{
-			years[25].SetActive(value: false);
-		}
-		if (stop == 27f)
-		{
-			years[26].SetActive(value: true);
-		}
-		else
-		{
-			years[26].SetActive(value: false);
-		}
-		if (stop == 28f)
-		{
-			years[27].SetActive(value: true);
-		}
-		else
-		{
-			years[27].SetActive(value: false);
-		}
-		if (stop == 29f)
-		{
-			years[28].SetActive(value: true);
-		}
-		else
-		{
-			years[28].SetActive(value: false);
-		}
-		if (stop == 30f)
-		{
-			years[29].SetActive(value: true);
-		}
-		else
-		{
-			years[29].SetActive(value: false);
-		}
-		if (stop == 31f)
-		{
-			years[30].SetActive(value: true);
-		}
-		else
-		{
-			years[30].SetActive(value: false);
-		}
-		if (stop == 32f)
+		years[0].SetActive(value: stop == 1);
+		years[1].SetActive(value: stop == 2);
+		years[2].SetActive(value: stop == 3);
+		years[3].SetActive(value: stop == 4);
+		years[4].SetActive(value: stop == 5);
+		years[5].SetActive(value: stop == 6);
+		years[6].SetActive(value: stop == 7);
+		years[7].SetActive(value: stop == 8);
+		years[8].SetActive(value: stop == 9);
+		years[9].SetActive(value: stop == 10);
+		years[10].SetActive(value: stop == 11);
+		years[11].SetActive(value: stop == 12);
+		years[12].SetActive(value: stop == 13);
+		years[13].SetActive(value: stop == 14);
+		years[14].SetActive(value: stop == 15);
+		years[15].SetActive(value: stop == 16);
+		years[16].SetActive(value: stop == 17);
+		years[17].SetActive(value: stop == 18);
+		years[18].SetActive(value: stop == 19);
+		years[19].SetActive(value: stop == 20);
+		years[20].SetActive(value: stop == 21);
+		years[21].SetActive(value: stop == 22);
+		years[22].SetActive(value: stop == 23);
+		years[23].SetActive(value: stop == 24);
+		years[24].SetActive(value: stop == 25);
+		years[25].SetActive(value: stop == 26);
+		years[26].SetActive(value: stop == 27);
+		years[27].SetActive(value: stop == 28);
+		years[28].SetActive(value: stop == 29);
+		years[29].SetActive(value: stop == 30);
+		years[30].SetActive(value: stop == 31);
+		if (stop == 32)
 		{
 			e.SetActive(value: false);
 			r.SetActive(value: true);
 			if (Input.GetKeyDown(KeyCode.R))
 			{
-				SceneManager.LoadScene(1);
+				SceneManager.LoadScene(sceneBuildIndex: 1);
 			}
 			years[31].SetActive(value: true);
 		}
