@@ -11,7 +11,7 @@ public class Years : MonoBehaviour
 
 	public GameObject[] years;
 
-	public int stop = 1;
+	public int stop;
 
 	private void Update()
 	{
