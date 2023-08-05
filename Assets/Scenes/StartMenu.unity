@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 73}
   - component: {fileID: 222}
   m_Layer: 5
-  m_Name: YearsContainerUI
+  m_Name: YearsUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 100}
   - component: {fileID: 155}
   m_Layer: 5
-  m_Name: R-rewindUI
+  m_Name: R-rewindText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 113}
   - component: {fileID: 634298765}
   m_Layer: 5
-  m_Name: E-rewindUI
+  m_Name: E-rewindText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,7 +378,6 @@ GameObject:
   - component: {fileID: 235}
   - component: {fileID: 237}
   - component: {fileID: 240}
-  - component: {fileID: 238}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1885,24 +1884,6 @@ MonoBehaviour:
   aboutMenu: {fileID: 39}
   tutorialMenu: {fileID: 32}
   yearsMenu: {fileID: 9}
---- !u!114 &238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c501d7e24bc690021ad30360594d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  back: {fileID: 19}
-  e: {fileID: 50}
-  r: {fileID: 37}
-  years:
-  - {fileID: 35}
-  stop: 0
 --- !u!29 &239
 OcclusionCullingSettings:
   m_ObjectHideFlags: 0
