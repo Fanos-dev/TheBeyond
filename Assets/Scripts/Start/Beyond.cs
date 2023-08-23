@@ -1,31 +1,34 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Beyond : MonoBehaviour
+namespace Start
 {
-	public float stop;
-
-	public GameObject beyond;
-
-	public GameObject back;
-
-	private void OnTriggerEnter(Collider other)
+	public class Beyond : MonoBehaviour
 	{
-		switch (stop)
+		public float stop;
+
+		public GameObject beyond;
+
+		public GameObject back;
+
+		private void OnTriggerEnter(Collider other)
 		{
-			case 1f:
-				beyond.SetActive(value: true);
-				Invoke(nameof(Beyond.SceneChanger), 4f);
-				break;
-			case 2f:
-				back.SetActive(value: true);
-				Invoke(nameof(Beyond.SceneChanger), 4f);
-				break;
+			switch (stop)
+			{
+				case 1f:
+					beyond.SetActive(value: true);
+					Invoke(nameof(Beyond.SceneChanger), 4f);
+					break;
+				case 2f:
+					back.SetActive(value: true);
+					Invoke(nameof(Beyond.SceneChanger), 4f);
+					break;
+			}
 		}
-	}
 
-	public void SceneChanger()
-	{
-		SceneManager.LoadScene(0);
+		public void SceneChanger()
+		{
+			SceneManager.LoadScene(0);
+		}
 	}
 }

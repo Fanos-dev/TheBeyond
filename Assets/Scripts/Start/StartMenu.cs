@@ -1,56 +1,59 @@
 using UnityEngine;
 
-public class StartMenu : MonoBehaviour
+namespace Start
 {
-	public GameObject start;
-
-	public GameObject aboutMenu;
-
-	public GameObject tutorialMenu;
-
-	public GameObject yearsMenu;
-
-	private void Start()
+	public class StartMenu : MonoBehaviour
 	{
-		Time.timeScale = 0f;
-		Cursor.lockState = CursorLockMode.None;
-	}
+		public GameObject start;
 
-	private void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.E))
+		public GameObject aboutMenu;
+
+		public GameObject tutorialMenu;
+
+		public GameObject yearsMenu;
+
+		private void Start()
 		{
-			Time.timeScale = 1f;
-			yearsMenu.SetActive(value: true);
+			Time.timeScale = 0f;
+			Cursor.lockState = CursorLockMode.None;
+		}
+
+		private void Update()
+		{
+			if (Input.GetKeyDown(KeyCode.E))
+			{
+				Time.timeScale = 1f;
+				yearsMenu.SetActive(value: true);
+				start.SetActive(value: false);
+			}
+			if (Input.GetKeyDown(KeyCode.Escape))
+			{
+				Application.Quit();
+			}
+		}
+
+		public void About()
+		{
 			start.SetActive(value: false);
+			aboutMenu.SetActive(value: true);
 		}
-		if (Input.GetKeyDown(KeyCode.Escape))
+
+		public void Tutorial()
 		{
-			Application.Quit();
+			start.SetActive(value: false);
+			tutorialMenu.SetActive(value: true);
 		}
-	}
 
-	public void About()
-	{
-		start.SetActive(value: false);
-		aboutMenu.SetActive(value: true);
-	}
+		public void BackAbout()
+		{
+			start.SetActive(value: true);
+			aboutMenu.SetActive(value: false);
+		}
 
-	public void Tutorial()
-	{
-		start.SetActive(value: false);
-		tutorialMenu.SetActive(value: true);
-	}
-
-	public void BackAbout()
-	{
-		start.SetActive(value: true);
-		aboutMenu.SetActive(value: false);
-	}
-
-	public void BackTutorial()
-	{
-		start.SetActive(value: true);
-		tutorialMenu.SetActive(value: false);
+		public void BackTutorial()
+		{
+			start.SetActive(value: true);
+			tutorialMenu.SetActive(value: false);
+		}
 	}
 }
